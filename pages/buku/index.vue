@@ -23,7 +23,7 @@
         </div>
         <div class="my-3 text-muted"></div>
         <div class="row layer m-5 rounded-5">
-          <h1 class="text-center" style="color: aliceblue">Koleksi Buku</h1>
+          <h1 class="text-center text-dark" style="color: aliceblue">Koleksi Buku</h1>
           <div v-for="(book, i) in books" :key="i" class="col-lg-2">
             <div class="card mb-3">
               <div class="card-body">
