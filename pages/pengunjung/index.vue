@@ -67,7 +67,7 @@ const visitors = ref([])
 const jmlpengunjung= ref(0)
 
 const getPengunjung =async () => {
-    const { data, error } = await supabase.from('pengunjung').select(', keanggotaan(), keperluan(*)')
+    const { data, error } = await supabase.from('pengunjung').select(`*, keanggotaan(nama), keperluan(nama)`)
     if(data) visitors.value = data 
     
 }
